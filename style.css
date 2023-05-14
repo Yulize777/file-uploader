@@ -1,0 +1,71 @@
+body{
+    background: #666;
+}
+.container{
+    width: 800px;
+    padding-top: 5rem;
+    margin: 0 auto;
+}
+.card{
+    padding: 1rem;
+    border-radius: 6px;
+    background: white;
+}
+.btn{
+    color: green;
+    position: relative;
+    border-radius: 99px;
+    border: 1px solid green;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.22s;
+    cursor: pointer;
+    margin-right: 1rem;
+    outline: none;
+    background: white;
+}
+.btn.primary{
+    background: green;
+    color: white;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+input[type=file]{
+    display: none;
+}
+.preview{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    gap: 15px;
+}
+.preview-img{
+    width: calc(25% - 11.25px);
+    position: relative;
+}
+.preview-img:hover .preview-remove{
+    opacity: 1;
+}
+.preview-img img{
+    width: 100%;
+    height: auto;
+}
+.preview-remove{
+    transition: opacity 1s;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+.preview-remove:hover{
+    opacity: 0.6;
+}
